@@ -73,7 +73,6 @@ public class PojoTest {
         Person ada = new Person("Ada Byron", 20, new Address("St James Square", "London", "W1"));
         people.insertOne(ada);
 
-
 //        one.subscribe(new Subscriber<InsertOneResult>() {
 //            @Override
 //            public void onSubscribe(Subscription subscription) {
