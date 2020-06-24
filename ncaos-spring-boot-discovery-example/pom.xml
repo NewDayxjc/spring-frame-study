@@ -23,7 +23,12 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <nacos-discovery-spring-boot.version>0.2.6</nacos-discovery-spring-boot.version>
   </properties>
-
+  <issueManagement>
+    <!--问题管理系统（例如jira）的名字， -->
+    <system>jira</system>
+    <!--该项目使用的问题管理系统的URL -->
+    <url>http://jira.baidu.com/banseon</url>
+  </issueManagement>
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
