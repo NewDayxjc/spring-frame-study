@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.xjc</groupId>
+    <artifactId>spring-frame-stydys</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>mongodb-study</module>
+        <module>nacos-example</module>
+    </modules>
+    <packaging>pom</packaging>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.1.RELEASE</version>
+    </parent>
+    <properties>
+        <nacos-version>0.2.6</nacos-version>
+        <spring-boot.version>2.3.1.RELEASE</spring-boot.version>
+        <nacos-config.version>${nacos-version}</nacos-config.version>
+        <spring-cloud-alibaba.version>2.1.0.RELEASE</spring-cloud-alibaba.version>
+        <nacos-config.version>${nacos-version}</nacos-config.version>
+        <nacos-discovery-spring-boot.version>${nacos-version}</nacos-discovery-spring-boot.version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <!--nacos-discovery-->
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-discovery-spring-boot-starter</artifactId>
+                <version>${nacos-discovery-spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <!--                <type>pom</type>-->
+                <!--                <scope>import</scope>-->
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-config-spring-boot-actuator</artifactId>
+                <version>${nacos-config.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-config-spring-boot-starter</artifactId>
+                <version>${nacos-config.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+</project>
