@@ -2,8 +2,8 @@ package mongodb;
 
 import com.mongodb.MongoClientSettings;
 import com.mongodb.client.*;
-import com.xjc.mongodb.pojo.Address;
-import com.xjc.mongodb.pojo.Person;
+import mongodb.pojo.Address;
+import mongodb.pojo.Person;
 import org.bson.Document;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.codecs.pojo.PojoCodecProvider;

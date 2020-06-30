@@ -6,7 +6,7 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import com.xjc.mongodb.monitor.CommandListenerTest;
+import mongodb.monitor.CommandListenerTest;
 import org.bson.Document;
 
 import java.util.Arrays;
@@ -53,6 +53,5 @@ public class MongodbTest {
 //        for (Method declaredMethod : database.getClass().getDeclaredMethods()) {
 //            System.out.println(declaredMethod);
 //        }
-
     }
 }
