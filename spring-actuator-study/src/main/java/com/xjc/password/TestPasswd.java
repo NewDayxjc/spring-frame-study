@@ -2,12 +2,14 @@ package com.xjc.password;
 
 import org.springframework.security.core.userdetails.User;
 
+
 /**
  * @author XiongJinChen
  * @version 1.0
  * @date 2020/7/2 18:06
  * @name TestPasswd
  */
+
 public class TestPasswd {
     public static void main(String[] args) {
         //noop  pbkdf2  scrypt  sha256
@@ -25,6 +27,5 @@ public class TestPasswd {
                 .roles("user")
                 .build();
         System.out.println(user.getPassword());
-
     }
 }
